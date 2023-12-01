@@ -18,7 +18,7 @@ function convertToInt(int){
     } else if (int == 'nine'){
         return '9';
     } else {
-        console.log(int)
+        console.log(int) // Not used but I was convinced I was missing something
     }
 }
 
@@ -41,9 +41,6 @@ str.forEach(element => {
             previousMatch = currentMatch[0];
         }
     }
-
-
-    // console.log(matches);
     if(matches[0].length > 1){
         matches[0] = convertToInt(matches[0]);
     }
@@ -52,8 +49,6 @@ str.forEach(element => {
         matches[matches.length -1 ] = convertToInt(matches[matches.length -1]);
     }
     number = matches[0] + matches[matches.length - 1];
-
-    // console.log(number);
     sum += parseInt(number);
 });
 console.log(sum);
