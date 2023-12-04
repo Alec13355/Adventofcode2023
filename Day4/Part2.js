@@ -28,8 +28,6 @@ str.forEach(element => {
       gameArray.find(x => x.card === temp + 1 ).amount = ((multiplier * 1) + gameArray.find(x => x.card === temp + 1 ).amount) ;
       currentWins--;
       temp ++;
-    console.log(gameArray);
-
     }
     currentCard++;
   });
